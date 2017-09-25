@@ -42,6 +42,7 @@ class RegenerateProductUrlCommand extends Command
         UrlPersistInterface $urlPersist
     ) {
         $this->state = $state;
+        $state->setAreaCode('frontend');
         $this->collection = $collection;
         $this->productUrlRewriteGenerator = $productUrlRewriteGenerator;
         $this->urlPersist = $urlPersist;
